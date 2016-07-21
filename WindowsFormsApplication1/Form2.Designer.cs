@@ -74,25 +74,6 @@
             this.checkedListBox1.Size = new System.Drawing.Size(162, 76);
             this.checkedListBox1.TabIndex = 13;
             // 
-            // dataSet1
-            // 
-            // 
-            // dataSet1BindingSource
-            
-            // 
-            // dataTable1BindingSource
-            // 
-            this.dataTable1BindingSource.DataMember = "DataTable1";
-            this.dataTable1BindingSource.DataSource = this.dataSet1BindingSource;
-            // 
-            // dataTable2BindingSource
-            // 
-            this.dataTable2BindingSource.DataMember = "DataTable2";
-            this.dataTable2BindingSource.DataSource = this.dataSet1BindingSource;
-            // 
-            // dataSet1BindingSource1
-            //
-            // 
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(233, 73);
@@ -166,6 +147,7 @@
             this.button2.TabIndex = 22;
             this.button2.Text = "Сохранить!";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // Form2
             // 
@@ -190,6 +172,10 @@
             this.Name = "Form2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Что надеть - добавление объекта";
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet1BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataTable1BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataTable2BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet1BindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
