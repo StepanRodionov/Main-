@@ -36,8 +36,8 @@ namespace WindowsFormsApplication1
             }
             if (reader.EndOfStream)
             {
-                writer.WriteLine("ID;Name;Place;Picture;Comments;Official;Normal;Sport;Bad;Dead;");
-                writer.WriteLine("1;" + textBox1.Text + ";" + textBox3.Text + ";" + textBox2.Text + ";" + textBox4.Text + ";" + a);
+                writer.WriteLine("ID;Name;Place;Picture;Comments;Official;Normal;Sport;Bad;Dead;Type");
+                writer.WriteLine("1;" + textBox1.Text + ";" + textBox3.Text + ";" + textBox2.Text + ";" + textBox4.Text + ";" + a + comboBox1.Text);
                 writer.Close();
             }
             else
@@ -47,15 +47,11 @@ namespace WindowsFormsApplication1
                     reader.ReadLine();
                     items_count++;
                 }
-                writer.WriteLine(items_count + ";" + textBox1.Text + ";" + textBox3.Text + ";" + textBox2.Text + ";" + textBox4.Text + ";" + a);
+                writer.WriteLine(items_count + ";" + textBox1.Text + ";" + textBox3.Text + ";" + textBox2.Text + ";" + textBox4.Text + ";" + a + comboBox1.Text);
                 writer.Close();
             }
             reader.Close();
-        }
-
-        private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
+            Close();
         }
     }
 }
