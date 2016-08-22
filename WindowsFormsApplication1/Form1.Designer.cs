@@ -117,6 +117,7 @@
             this.Allcloth.TabIndex = 1;
             this.Allcloth.Text = "Посмотреть все!";
             this.Allcloth.UseVisualStyleBackColor = false;
+            this.Allcloth.Click += new System.EventHandler(this.Allcloth_Click);
             // 
             // enumChoosen
             // 
@@ -177,6 +178,7 @@
             this.casualities.TabIndex = 7;
             this.casualities.Text = "Потери";
             this.casualities.UseVisualStyleBackColor = false;
+            this.casualities.Click += new System.EventHandler(this.casualities_Click);
             // 
             // best
             // 
